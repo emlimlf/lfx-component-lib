@@ -22,8 +22,7 @@ jobs:
           scope: "@emlimlf"
       - run: yarn install
       - run: yarn run build
-      - run: cd dist/lfx-component-lib/
-      - run: npm pack
-      - run: npm publish
+      - run: cd dist/lfx-component-lib/ && npm pack
+      - run: cd dist/lfx-component-lib/ && npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
