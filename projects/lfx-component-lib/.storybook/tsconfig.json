@@ -3,7 +3,11 @@
   "compilerOptions": {
     "types": ["node"],
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "lfx-component-lib": ["./src/public-api"]
+    },
+    "baseUrl": "./"
   },
   "exclude": ["../src/test.ts", "../src/**/*.spec.ts"],
   "include": ["../src/**/*.stories.*", "./preview.ts"],

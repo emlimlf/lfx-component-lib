@@ -5,12 +5,11 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "baseUrl": "./",
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "lfx-component-lib": [
-        "./dist/lfx-component-lib"
-      ]
+      "lfx-component-lib": ["./dist/lfx-component-lib"]
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -24,10 +23,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

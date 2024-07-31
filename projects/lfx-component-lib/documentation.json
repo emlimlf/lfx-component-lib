@@ -21,6 +21,16 @@
                 "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
             },
             {
+                "name": "LFXPrimary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -89,6 +99,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<PageComponent>",
                 "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LfxComponentLibComponent>",
+                "defaultValue": "{\n  title: 'Example/Button',\n  component: LfxComponentLibComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
             },
             {
                 "name": "preview",
@@ -165,6 +185,17 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<LfxComponentLibComponent>",
+                "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
             }
         ],
         "enumerations": [],
@@ -219,6 +250,28 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts": [
+                {
+                    "name": "LFXPrimary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<LfxComponentLibComponent>",
+                    "defaultValue": "{\n  title: 'Example/Button',\n  component: LfxComponentLibComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
                 }
             ],
             "projects/lfx-component-lib/src/stories/header.stories.ts": [
@@ -339,6 +392,19 @@
                     "description": "",
                     "kind": 183
                 }
+            ],
+            "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LfxComponentLibComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
             ]
         }
     },
@@ -353,6 +419,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LFXPrimary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/__docs__/lfx-component-lib.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

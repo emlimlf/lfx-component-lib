@@ -4,13 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-lfx-component-lib',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      lfx-component-lib works!
-    </p>
-  `,
-  styles: ``
+  template: ` <button>SAMPLE LFX BUTTON 123</button> `,
+  styles: ``,
 })
-export class LfxComponentLibComponent {
-
-}
+export class LfxComponentLibComponent {}
