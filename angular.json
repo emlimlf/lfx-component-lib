@@ -33,6 +33,36 @@
               "zone.js/testing"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/lfx-component-lib/.storybook",
+            "browserTarget": "lfx-component-lib:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/lfx-component-lib"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/lfx-component-lib/.storybook",
+            "browserTarget": "lfx-component-lib:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/lfx-component-lib"
+            ],
+            "outputDir": "storybook-static"
+          }
         }
       }
     }
