@@ -48,5 +48,8 @@
     "ng-packagr": "^18.1.0",
     "storybook": "^8.2.6",
     "typescript": "~5.4.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@emlimlf"
   }
 }
