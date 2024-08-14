@@ -3,5 +3,6 @@
   "dest": "../../dist/lfx-component-lib",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["src/lib/configs/**/*"]
 }
