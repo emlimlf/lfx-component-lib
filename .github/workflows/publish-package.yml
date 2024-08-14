@@ -2,9 +2,12 @@ name: publish on github
 
 on:
   # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+  # push:
+  #   tags:
+  #     - v*
   push:
-    tags:
-      - v*
+    branches:
+      - main
 
 jobs:
   publish-gpr:
