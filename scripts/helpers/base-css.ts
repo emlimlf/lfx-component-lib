@@ -7,4 +7,9 @@ body {
 }
 `;
 
+export const colorBase = `
+body {
+  color: [[colorValue]]
+}
+`;
 // TODO: add more base styles here

@@ -16,3 +16,19 @@ export const typographyDefinitions: IStyleKeys[] = [
     colorKey: '',
   },
 ];
+
+export const defaultBodyColorKey = 'primary';
+export const colorDefinitions: IStyleKeys[] = [
+  {
+    name: 'primary',
+    type: 'class',
+    dimensionKey: '',
+    colorKey: 'primary',
+  },
+  {
+    name: 'secondary',
+    type: 'class',
+    dimensionKey: '',
+    colorKey: 'secondary',
+  },
+];

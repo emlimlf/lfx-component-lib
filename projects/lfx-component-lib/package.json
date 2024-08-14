@@ -1,6 +1,6 @@
 {
   "name": "@emlimlf/lfx-component-lib",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0"
@@ -22,6 +22,9 @@
     },
     "./typography": {
       "sass": "./styles/typography.scss"
+    },
+    "./colors": {
+      "sass": "./styles/colors.scss"
     }
   }
 }
