@@ -5,6 +5,7 @@
     "entryFile": "src/public-api.ts"
   },
   "assets": [
-    { "input": "src/lib/configs", "glob": "**/*.json", "output": "configs" }
+    { "input": "src/lib/configs", "glob": "**/*.json", "output": "configs" },
+    { "input": "src/lib/styles", "glob": "**/*.scss", "output": "styles" }
   ]
 }
