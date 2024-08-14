@@ -17,7 +17,7 @@
     "url": "https://github.com/emlimlf/lfx-component-lib.git"
   },
   "exports": {
-    "./configs": {
+    "./color-palette.json": {
       "default": "./configs/color-palette.json"
     }
   }
