@@ -1,0 +1,606 @@
+{
+  "containers": {
+    "backgrounds": {
+      "primary": {
+        "value": "{colors.grey.900}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "secondary": {
+        "value": "{colors.grey.1000}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "blue": {
+        "value": "{colors.blue.1000}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "grey": {
+        "value": "{colors.grey.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "error": {
+        "value": "{colors.red.1000}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "success": {
+        "value": "{colors.green.1000}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "warning": {
+        "value": "{colors.orange.1000}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "notice": {
+        "value": "{containers.backgrounds.blue}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "corners": {
+      "square": {
+        "value": "{dimensions.dim-2}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "drill-down-button": {
+        "value": "{dimensions.dim-40}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "filter": {
+        "value": "{dimensions.dim-16}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "flush": {
+        "value": "{dimensions.dim-0}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "frame-default": {
+        "value": "{dimensions.dim-8}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "frame-small": {
+        "value": "{dimensions.dim-4}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "sizes": {
+      "icon": {
+        "value": "{dimensions.dim-24}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "icon-small": {
+        "value": "{dimensions.dim-16}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "padding": {
+      "cards": {
+        "horizontal": {
+          "value": "{dimensions.dim-32}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        },
+        "vertical": {
+          "value": "{dimensions.dim-24}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        }
+      },
+      "body": {
+        "horizontal": {
+          "value": "{dimensions.dim-40}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        },
+        "vertical": {
+          "value": "{dimensions.dim-32}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        }
+      },
+      "cells": {
+        "horizontal": {
+          "value": "{dimensions.dim-16}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        }
+      },
+      "fields": {
+        "horizontal": {
+          "value": "{dimensions.dim-8}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        }
+      },
+      "menu": {
+        "horizontal": {
+          "value": "{dimensions.dim-24}",
+          "type": "dimension",
+          "parent": "Global Tokens/Dark Mode",
+          "description": ""
+        }
+      }
+    }
+  },
+  "content": {
+    "charts": {
+      "default": {
+        "value": "{content.charts.blue-light}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "blue-dark": {
+        "value": "{colors.blue.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "green": {
+        "value": "{colors.green.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "yellow": {
+        "value": "{colors.yellow.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "orange": {
+        "value": "{colors.orange.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "red": {
+        "value": "{colors.red.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "blue": {
+        "value": "{colors.blue.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "blue-light": {
+        "value": "{colors.blue.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "green-light": {
+        "value": "{colors.green.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "orange-light": {
+        "value": "{colors.orange.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "yellow-light": {
+        "value": "{colors.yellow.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "red-light": {
+        "value": "{colors.red.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "green-dark": {
+        "value": "{colors.green.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "yellow-dark": {
+        "value": "{colors.yellow.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "orange-dark": {
+        "value": "{colors.orange.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "red-dark": {
+        "value": "{colors.red.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "grey-light": {
+        "value": "{colors.grey.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "grey": {
+        "value": "{colors.grey.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "grey-dark": {
+        "value": "{colors.grey.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "primary": {
+      "value": "{colors.grey.50}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": "",
+      "oldValue": "{colors.grey.50}"
+    },
+    "secondary": {
+      "value": "{colors.grey.400}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "ratings": {
+      "weak": {
+        "value": "{colors.red.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "moderate": {
+        "value": "{colors.yellow.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "strong": {
+        "value": "{colors.green.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "needs-help": {
+        "value": "{colors.orange.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "typography": {
+      "link-idle": {
+        "value": "{colors.blue.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "link-hover": {
+        "value": "{colors.blue.300}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "link-press": {
+        "value": "{colors.blue.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "letter-spacing": {
+        "value": "{dimensions.dim-0}",
+        "type": "dimension",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "messages": {
+      "notice": {
+        "value": "{colors.blue.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "warning": {
+        "value": "{colors.orange.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "success": {
+        "value": "{colors.green.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "error": {
+        "value": "{colors.red.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "brand": {
+      "blue": {
+        "value": "{colors.blue.400}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "grey": {
+        "value": "{colors.grey.600}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "interactive-idle": {
+      "value": "{content.primary}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "interactive-hover": {
+      "value": "{colors.grey.100}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "overlay": {
+      "value": "{colors.overlay.grey-0-50}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "page-title": {
+      "value": "{dimensions.dim-22}",
+      "type": "dimension",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "section-title": {
+      "value": "{dimensions.dim-18}",
+      "type": "dimension",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "subsection-title": {
+      "value": "{dimensions.dim-14}",
+      "type": "dimension",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "body-1": {
+      "value": "{dimensions.dim-14}",
+      "type": "dimension",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "body-2": {
+      "value": "{dimensions.dim-11}",
+      "type": "dimension",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    }
+  },
+  "selectables": {
+    "buttons": {
+      "primary-idle": {
+        "value": "{colors.blue.500}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "primary-hover": {
+        "value": "{colors.blue.700}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "primary-press": {
+        "value": "{colors.blue.800}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "secondary": {
+        "value": "{containers.backgrounds.blue}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "primary-content": {
+        "value": "{colors.grey.0}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "secondary-content-idle": {
+        "value": "{content.typography.link-idle}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "secondary-content-hover": {
+        "value": "{content.typography.link-hover}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "secondary-content-press": {
+        "value": "{content.typography.link-press}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "icon-idle": {
+        "value": "{colors.grey.300}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "icon-hover": {
+        "value": "{colors.grey.100}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "icon-focus": {
+        "value": "{content.primary}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "icon-disabled": {
+        "value": "{colors.grey.700}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "disabled": {
+      "value": "{containers.backgrounds.grey}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "options": {
+      "selected-idle": {
+        "value": "{selectables.buttons.primary-idle}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "selected-hover": {
+        "value": "{colors.blue.300}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "unselected-idle": {
+        "value": "{content.charts.blue-light}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "unselected-hover": {
+        "value": "{colors.blue.100}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode"
+      }
+    },
+    "fields": {
+      "selected-idle": {
+        "value": "{containers.backgrounds.blue}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "selected-hover": {
+        "value": "{colors.blue.700}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "unselected-idle": {
+        "value": "{containers.backgrounds.secondary}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "unselected-hover": {
+        "value": "{containers.backgrounds.grey}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    },
+    "content-disabled": {
+      "value": "{colors.grey.400}",
+      "type": "color",
+      "parent": "Global Tokens/Dark Mode",
+      "description": ""
+    },
+    "filters": {
+      "background": {
+        "value": "{content.charts.blue.dark}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    }
+  },
+  "navigation": {
+    "menu": {
+      "idle": {
+        "value": "{colors.grey.400}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "hover": {
+        "value": "{colors.grey.200}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "focus": {
+        "value": "{content.primary}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      },
+      "disabled": {
+        "value": "{colors.grey.700}",
+        "type": "color",
+        "parent": "Global Tokens/Dark Mode",
+        "description": ""
+      }
+    }
+  }
+}

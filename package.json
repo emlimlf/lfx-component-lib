@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "config": "ts-node ./scripts/build-palette.ts",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -46,6 +47,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.1.0",
     "storybook": "^8.2.6",
+    "ts-node": "^10.9.2",
     "typescript": "~5.4.2"
   },
   "publishConfig": {
