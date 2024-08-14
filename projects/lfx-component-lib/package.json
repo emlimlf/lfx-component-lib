@@ -1,6 +1,6 @@
 {
   "name": "@emlimlf/lfx-component-lib",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0"
@@ -17,8 +17,8 @@
     "url": "https://github.com/emlimlf/lfx-component-lib.git"
   },
   "exports": {
-    "./color-palette.json": {
-      "default": "./src/lib/configs/color-palette.json"
+    "./configs": {
+      "default": "./configs/color-palette.json"
     }
   }
 }
