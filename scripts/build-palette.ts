@@ -1,42 +1,35 @@
 // Copyright The Linux Foundation and each contributor to LFX.
 // SPDX-License-Identifier: MIT
+import { primitives } from './helpers/read-json';
+import {
+  IOutputPalette,
+  IPrimitiveObj,
+  ISubColorOutput,
+} from './interfaces/colors';
 
-interface ISubColorOutput {
-  [key: string]: string;
-}
+function buildPalette() {
+  const { writeFile } = require('fs');
 
-interface IOutputPalette {
-  [key: string]: ISubColorOutput;
-}
+  const targetPath = `./projects/lfx-component-lib/src/lib/configs/color-palette.json`;
 
-interface IPrimitiveObj {
-  value: string;
-  type: string;
-  parent: string;
-}
+  const colors = primitives.colors;
+  const outputPalette: IOutputPalette = {};
 
-const { writeFile } = require('fs');
-const colorsPalette = require('../design-tokens/primitives.json');
+  if (colors) {
+    Object.keys(colors).forEach((color: string) => {
+      outputPalette[color] = generateSubColors(colors[color]);
+    });
+  }
 
-const targetPath = `./projects/lfx-component-lib/src/lib/configs/color-palette.json`;
-
-const colors = colorsPalette.colors;
-const outputPalette: IOutputPalette = {};
-
-if (colors) {
-  Object.keys(colors).forEach((color: string) => {
-    outputPalette[color] = generateSubColors(colors[color]);
+  // write the content to the respective file
+  writeFile(targetPath, JSON.stringify(outputPalette), (err: any) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(`Wrote variables to ${targetPath}`);
+    }
   });
 }
-
-// write the content to the respective file
-writeFile(targetPath, JSON.stringify(outputPalette), (err: any) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(`Wrote variables to ${targetPath}`);
-  }
-});
 
 function generateSubColors(
   colorObj: Record<string, IPrimitiveObj>,
@@ -51,3 +44,5 @@ function generateSubColors(
     return acc;
   });
 }
+
+buildPalette();
