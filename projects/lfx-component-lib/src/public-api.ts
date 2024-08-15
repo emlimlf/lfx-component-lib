@@ -3,4 +3,5 @@
  */
 
 export * from './lib/lfx-component-lib.service';
-export * from './lib/lfx-component-lib.component';
+export * from './lib/containers/sections/sections.component';
+export * from './lib/containers/toast/toast.component';

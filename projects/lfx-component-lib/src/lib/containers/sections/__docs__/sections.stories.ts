@@ -4,7 +4,7 @@ import { SectionsComponent } from '../sections.component';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<SectionsComponent> = {
-  title: 'Example/Containers/Sections',
+  title: 'LFX Components/Containers/Sections',
   component: SectionsComponent,
   tags: ['autodocs'],
   argTypes: {
