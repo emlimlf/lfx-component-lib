@@ -7,7 +7,12 @@
       "projectType": "library",
       "root": "projects/lfx-component-lib",
       "sourceRoot": "projects/lfx-component-lib/src",
-      "prefix": "lib",
+      "prefix": "lfx",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -28,10 +33,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/lfx-component-lib/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         },
         "storybook": {
@@ -40,12 +42,7 @@
             "configDir": "projects/lfx-component-lib/.storybook",
             "browserTarget": "lfx-component-lib:build",
             "compodoc": true,
-            "compodocArgs": [
-              "-e",
-              "json",
-              "-d",
-              "projects/lfx-component-lib"
-            ],
+            "compodocArgs": ["-e", "json", "-d", "projects/lfx-component-lib"],
             "port": 6006
           }
         },
@@ -55,12 +52,7 @@
             "configDir": "projects/lfx-component-lib/.storybook",
             "browserTarget": "lfx-component-lib:build",
             "compodoc": true,
-            "compodocArgs": [
-              "-e",
-              "json",
-              "-d",
-              "projects/lfx-component-lib"
-            ],
+            "compodocArgs": ["-e", "json", "-d", "projects/lfx-component-lib"],
             "outputDir": "storybook-static"
           }
         }

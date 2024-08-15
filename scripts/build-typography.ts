@@ -1,11 +1,7 @@
 // Copyright The Linux Foundation and each contributor to LFX.
 // SPDX-License-Identifier: MIT
 import { typographyBase } from './helpers/base-css';
-import {
-  getKeyValue,
-  findKeyValue,
-  getPrimitiveValue,
-} from './helpers/helper-functions';
+import { getPrimitiveValue } from './helpers/helper-functions';
 import { primitives, lightMode } from './helpers/read-json';
 import { typographyDefinitions } from './helpers/script-configs';
 import { IPrimitiveObj } from './interfaces/colors';

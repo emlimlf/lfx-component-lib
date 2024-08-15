@@ -11,6 +11,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Info",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-notice>\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-notice>`,\n  }),\n}"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -111,6 +121,26 @@
                 "defaultValue": "{\n  title: 'Example/Button',\n  component: LfxComponentLibComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<NoticeComponent>",
+                "defaultValue": "{\n  title: 'Example/Containers/Sections',\n  component: NoticeComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['info', 'warning', 'success', 'error'],\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SectionsComponent>",
+                "defaultValue": "{\n  title: 'Example/Containers/Sections',\n  component: SectionsComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -139,6 +169,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Section",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <div style=\"display: grid; grid-template-columns: repeat(2,minmax(0,1fr))\">\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    </div>`,\n  }),\n}"
             },
             {
                 "name": "Small",
@@ -196,10 +236,54 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<NoticeComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<SectionsComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
             }
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts": [
+                {
+                    "name": "Info",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-notice>\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-notice>`,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<NoticeComponent>",
+                    "defaultValue": "{\n  title: 'Example/Containers/Sections',\n  component: NoticeComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['info', 'warning', 'success', 'error'],\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
+                }
+            ],
             "projects/lfx-component-lib/src/stories/button.stories.ts": [
                 {
                     "name": "Large",
@@ -338,6 +422,28 @@
                     "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
                 }
             ],
+            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<SectionsComponent>",
+                    "defaultValue": "{\n  title: 'Example/Containers/Sections',\n  component: SectionsComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
+                },
+                {
+                    "name": "Section",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <div style=\"display: grid; grid-template-columns: repeat(2,minmax(0,1fr))\">\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    </div>`,\n  }),\n}"
+                }
+            ],
             "projects/lfx-component-lib/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -405,6 +511,32 @@
                     "description": "",
                     "kind": 183
                 }
+            ],
+            "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<NoticeComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SectionsComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
             ]
         }
     },
@@ -439,6 +571,46 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Info",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/notice/__docs__/notice.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Section",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
