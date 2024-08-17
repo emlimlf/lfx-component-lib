@@ -11,14 +11,24 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Info",
+                "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-toast type=\"${args.type}\">\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-toast>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: 'warning',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ToastComponent>",
+                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    props: {\n      ...args,\n      type: 'warning',\n    },\n    template: `\n      <lfx-toast ${argsToTemplate(args)}>\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  })\n}"
             },
             {
                 "name": "meta",
@@ -31,16 +41,6 @@
                 "defaultValue": "{\n  title: 'LFX Components/Containers/Sections',\n  component: SectionsComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
             },
             {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<ToastComponent>",
-                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'],\n      defaultValue: 'notice',\n    },\n  },\n}"
-            },
-            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
             },
             {
                 "name": "Section",
@@ -67,8 +67,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<SectionsComponent>",
-                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "rawtype": "StoryObj<ToastComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -78,8 +78,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ToastComponent>",
-                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "rawtype": "StoryObj<SectionsComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -90,14 +90,14 @@
         "groupedVariables": {
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
-                    "name": "Info",
+                    "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-toast type=\"${args.type}\">\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-toast>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'warning',\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -107,7 +107,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ToastComponent>",
-                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'],\n      defaultValue: 'notice',\n    },\n  },\n}"
+                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    props: {\n      ...args,\n      type: 'warning',\n    },\n    template: `\n      <lfx-toast ${argsToTemplate(args)}>\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  })\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
@@ -141,26 +141,13 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
                 }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<SectionsComponent>",
-                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
                     "name": "Story",
@@ -168,6 +155,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ToastComponent>",
                     "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SectionsComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -216,7 +216,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Info",
+                "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
