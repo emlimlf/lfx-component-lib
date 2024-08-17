@@ -33,11 +33,23 @@ export const Notice: Story = {
   args: {
     type: 'notice' as IType,
   },
+  parameters: {
+    design: {
+      type: "figspec",
+      url: "https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4",
+    },
+  },
 };
 
 export const Warning: Story = {
   args: {
     type: 'warning' as IType,
+  },
+  parameters: {
+    design: {
+      type: "figspec",
+      url: "https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4",
+    },
   },
 };
 
@@ -45,10 +57,22 @@ export const Success: Story = {
   args: {
     type: 'success' as IType,
   },
+  parameters: {
+    design: {
+      type: "figspec",
+      url: "https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4",
+    },
+  },
 };
 
 export const Error: Story = {
   args: {
     type: 'error' as IType,
+  },
+  parameters: {
+    design: {
+      type: "figspec",
+      url: "https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4",
+    },
   },
 };
