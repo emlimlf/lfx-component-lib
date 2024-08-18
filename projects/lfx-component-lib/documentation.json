@@ -18,7 +18,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -78,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             },
             {
                 "name": "Warning",
@@ -88,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             }
         ],
         "functions": [],
@@ -127,7 +127,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -147,7 +147,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "Success",
@@ -157,7 +157,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "Warning",
@@ -167,7 +167,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
