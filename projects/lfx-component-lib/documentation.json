@@ -11,14 +11,14 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Info",
+                "name": "Error",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-toast type=\"${args.type}\">\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-toast>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
             },
             {
                 "name": "meta",
@@ -38,7 +38,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ToastComponent>",
-                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'],\n      defaultValue: 'notice',\n    },\n  },\n}"
+                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
+            },
+            {
+                "name": "Notice",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -48,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
             },
             {
                 "name": "Section",
@@ -59,6 +69,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <div style=\"display: grid; grid-template-columns: repeat(2,minmax(0,1fr))\">\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    </div>`,\n  }),\n}"
+            },
+            {
+                "name": "Success",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
             }
         ],
         "functions": [],
@@ -90,14 +120,14 @@
         "groupedVariables": {
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
-                    "name": "Info",
+                    "name": "Error",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-toast type=\"${args.type}\">\n      <h1>Title</h1>\n      <p>Body paragraph</p>\n    </lfx-toast>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -107,7 +137,37 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ToastComponent>",
-                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'],\n      defaultValue: 'notice',\n    },\n  },\n}"
+                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
+                },
+                {
+                    "name": "Notice",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
+                },
+                {
+                    "name": "Success",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+                },
+                {
+                    "name": "Warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
@@ -141,7 +201,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
                 }
             ]
         },
@@ -216,7 +276,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Info",
+                "name": "Error",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -227,6 +287,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Notice",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Success",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Warning",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
