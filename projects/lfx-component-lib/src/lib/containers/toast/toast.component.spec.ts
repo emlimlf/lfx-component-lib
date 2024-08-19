@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ToastComponent } from './toast.component';
 
-describe('ToastComponent', () => {
+describe('ToastComponent::integration testing', () => {
   let component: ToastComponent;
   let fixture: ComponentFixture<ToastComponent>;
 
@@ -16,7 +15,13 @@ describe('ToastComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('component should exist', () => {
+    expect(component).toBeDefined();
   });
+
+  it('component should have default type "notice"', () => {
+    expect(component).toBeDefined();
+    expect(component.type()).toBe('notice');
+  });
+
 });
