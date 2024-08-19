@@ -22,3 +22,9 @@ Run `ng test lfx-component-lib` to execute the unit tests via [Karma](https://ka
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Storybook
+
+To start storybook run `npm run storybook` and navigate to `http://localhost:6006/`.
+To get access to Figma designs in Design tab add `STORYBOOK_FIGMA_ACCESS_TOKEN` to your environment variables. To generate Figma personal access token follow [this guide](https://www.figma.com/developers/api#access-tokens).
+```
