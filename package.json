@@ -44,6 +44,7 @@
     "@storybook/addon-onboarding": "^8.2.6",
     "@storybook/angular": "^8.2.6",
     "@storybook/blocks": "^8.2.6",
+    "@storybook/jest": "^0.2.3",
     "@storybook/test": "^8.2.6",
     "@types/jasmine": "~5.1.0",
     "chromatic": "^11.7.1",
