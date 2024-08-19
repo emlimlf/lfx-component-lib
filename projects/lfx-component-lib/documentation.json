@@ -24,21 +24,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<SectionsComponent>",
-                "defaultValue": "{\n  title: 'LFX Components/Containers/Sections',\n  component: SectionsComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ToastComponent>",
                 "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SectionsComponent>",
+                "defaultValue": "{\n  title: 'LFX Components/Containers/Sections',\n  component: SectionsComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  parameters: {\n    backgrounds: { default: 'dark' },\n  },\n}"
             },
             {
                 "name": "Notice",
@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const canvas = within(canvasElement);\n    const toastElement = canvas.getByTestId('lfx-toast-container');\n    await expect(toastElement.classList).toContain('notice');\n    // get current class of the toast in canvas var and check if it is the correct one in expect()\n  }\n}"
             },
             {
                 "name": "preview",
@@ -97,8 +97,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<SectionsComponent>",
-                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
+                "rawtype": "StoryObj<ToastComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -108,8 +108,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ToastComponent>",
-                "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "rawtype": "StoryObj<SectionsComponent>",
+                "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -147,7 +147,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const canvas = within(canvasElement);\n    const toastElement = canvas.getByTestId('lfx-toast-container');\n    await expect(toastElement.classList).toContain('notice');\n    // get current class of the toast in canvas var and check if it is the correct one in expect()\n  }\n}"
                 },
                 {
                     "name": "Success",
@@ -208,19 +208,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<SectionsComponent>",
-                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
                     "name": "Story",
@@ -228,6 +215,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ToastComponent>",
                     "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SectionsComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
