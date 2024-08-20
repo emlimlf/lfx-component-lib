@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import { IType, ButtonComponent } from '../button.component';
+import { IButtonType, ButtonComponent } from '../button.component';
 
 type Story = StoryObj<ButtonComponent>;
 
@@ -16,11 +16,11 @@ const meta: Meta<ButtonComponent> = {
   argTypes: {
     type: {
       control: 'select',
-      options: ['primary', 'secondary'] as IType[],
+      options: ['primary', 'secondary'] as IButtonType[],
     },
   },
   args: {
-    type: 'primary' as IType,
+    type: 'primary' as IButtonType,
   },
 };
 
@@ -28,7 +28,7 @@ export default meta;
 
 export const Primary: Story = {
   args: {
-    type: 'primary' as IType,
+    type: 'primary' as IButtonType,
   },
   parameters: {
     design: {
@@ -40,7 +40,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    type: 'secondary' as IType,
+    type: 'secondary' as IButtonType,
   },
   parameters: {
     design: {

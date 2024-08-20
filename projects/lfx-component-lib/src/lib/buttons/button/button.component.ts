@@ -5,7 +5,7 @@ import {
   output,
 } from '@angular/core';
 
-export type IType = 'primary' | 'secondary';
+export type IButtonType = 'primary' | 'secondary';
 
 @Component({
   selector: 'lfx-button',
@@ -17,7 +17,7 @@ export type IType = 'primary' | 'secondary';
 })
 export class ButtonComponent {
   text = input<string>('Button');
-  type = input<IType>('primary');
+  type = input<IButtonType>('primary');
   clicked = output();
 
   onClick() {
