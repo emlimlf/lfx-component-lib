@@ -18,7 +18,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-button type=\"${args.type}\" text=\"Sample Button\" />\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['primary', 'secondary'] as IType[],\n    },\n  },\n  args: {\n    type: 'primary' as IType,\n  },\n}"
             },
             {
                 "name": "meta",
@@ -48,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -59,6 +69,26 @@
                 "deprecationMessage": "",
                 "type": "Preview",
                 "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'primary' as IType,\n  },\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=636-7580&t=7cvVekegGeXJXBCl-0',\n    },\n  },\n}"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'secondary' as IType,\n  },\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=636-7580&t=7cvVekegGeXJXBCl-0',\n    },\n  },\n}"
             },
             {
                 "name": "Section",
@@ -78,7 +108,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             },
             {
                 "name": "Warning",
@@ -88,11 +118,22 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -127,7 +168,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -147,7 +188,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "Success",
@@ -157,7 +198,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
                 },
                 {
                     "name": "Warning",
@@ -167,7 +208,39 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n}"
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonComponent>",
+                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-button type=\"${args.type}\" text=\"Sample Button\" />\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['primary', 'secondary'] as IType[],\n    },\n  },\n  args: {\n    type: 'primary' as IType,\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'primary' as IType,\n  },\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=636-7580&t=7cvVekegGeXJXBCl-0',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'secondary' as IType,\n  },\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=636-7580&t=7cvVekegGeXJXBCl-0',\n    },\n  },\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
@@ -208,6 +281,19 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
                 {
                     "name": "Story",
@@ -247,6 +333,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/buttons/button/__docs__/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
